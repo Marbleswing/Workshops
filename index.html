@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/> 
+</head>
+<body>
+    <div class="menu" id="menu-main">
+        <img src="pictures/farm.jpg" class="background top-right"/>
+        <div class="title">Workshops on the farm!</div>
+        <div class="text">Come Visit Sunny Meadow Farm and Try One of Our Exciting Workshops!</div>
+        <div class="text">Looking for a fun and unique experience in the heart of the countryside? We invite you to join us at Sunny Meadow Farm for one of our hands-on workshops! Whether you’re interested in trekking with our cheeky sheep, trying your hand at sheep shearing, or learning how fleece turns into felt, we’ve got something for everyone. Our friendly farm animals and expert instructors are here to make sure you have a memorable time.</div>
+        <div class="big-text">Location:</div>
+        <div class="text">Sunny Meadow Farm, Hilltop Lane, Greenfield, NG15 6YX</div>
+        <div class="big-text">For more information, contact us at:</div>
+        <div class="text">📞 Phone: 01234 567890</div>
+        <div class="big-text">We can’t wait to welcome you to our farm for an unforgettable day!</div>
+        <div class="big-text" style="font-size: 3em;">Workshops:</div>
+        <div class="workshop" id="ws-trekking">
+            <div class="ws-title">Sheep trekking</div>
+            <div>If you want to enjoy the countryside with a woolly friend, then this is perfect for you. Our cheeky sheep, Meggy and Harry, are waiting for you! Don’t forget your wellies – the fields we walk on can be muddy.</div>
+            <div class="ws-info">90 mins, Feb–Sept, from £25</div>
+        </div>
+        <div class="workshop" id="ws-shear">
+            <div class="ws-title">Shear a sheep</div>
+            <div>Why not have a go at shearing a sheep? This is a great experience and a challenge for anyone who likes to try something completely different, especially those who love sheep!</div>
+            <div class="ws-info">120 mins, Jun–Jul, £45, age: 15 or older</div>
+        </div>
+        <div class="workshop" id="ws-felt">
+            <div class="ws-title">Fleece to felt</div>
+            <div>Have you ever asked yourself how the fleece of a sheep becomes a felt jacket? In our workshops you can create your own felted object and at the same time find out about wool and what you can do with it.</div>
+            <div class="ws-info">5 hours, Jun–Jul, £90</div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu-trekking">
+        <img src="back.png" class="back back_main"/>
+        <div class="title">Sheep trekking</div>
+        <div class="text margin">Join Meggy and Harry for an Unforgettable Sheep Trekking Adventure!</div>
+        <img src="pictures/trekking.jpg" class="picture"/>
+        <div class="text">Looking for a unique way to explore the countryside? Imagine strolling through scenic fields alongside our friendly and cheeky sheep, Meggy and Harry. It’s a one-of-a-kind experience that’s perfect for families, friends, or anyone who loves nature and animals.</div>
+        <div class="big-text">Details:</div>
+        <div class="margin">
+            <span class="big-text">When:</span>
+            <span class="text">Every Saturday and Sunday at 10:00 AM and 2:00 PM</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Duration:</span>
+            <span class="text">90 minutes</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Season:</span>
+            <span class="text">February to September</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Price:</span>
+            <span class="text">Starting at £25 per person</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Meeting Point:</span>
+            <span class="text">Sunny Meadow Farm, Hilltop Lane, Greenfield, NG15 6YX</span>
+        </div>
+        <div class="text">Remember to bring your wellies – the fields can get a little muddy, but that’s all part of the fun! Book now and make unforgettable memories with our woolly companions.</div>
+        <button id="book-trekking">Book now</button>
+    </div>
+    
+    <div class="menu" id="menu-trekking-book">
+        <img src="back.png" class="back" id="back-trekking"/>
+        <div class="title">Sheep Trekking schedule</div>
+        <div class="big-text">Ready to join us? Secure your spot today!</div>
+        <div class="termin">
+            <span class="text">Saturday, 1st February - 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 2nd February - 2:00 PM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Saturday, 8th February - 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Saturday, 15th February - 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 16th February - 2:00 PM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="text margin">These are just a few of the upcoming sessions - book your spot now!</div>
+    </div>
+
+    <div class="menu" id="menu-shear">
+        <img src="back.png" class="back back_main"/>
+        <div class="title">Shear a sheep</div>
+        <div class="text margin">Try Your Hand at Sheep Shearing – A Unique Farm Experience!</div>
+        <img src="pictures/shear.png" class="picture"/>
+        <div class="text">Ever wondered what it’s like to shear a sheep? Step into the shoes of a farmer and give it a go! This hands-on experience is perfect for those who love a challenge and want to try something completely different. Get up close with our friendly sheep and learn the art of shearing in a fun and relaxed environment.</div>
+        <div class="big-text">Details:</div>
+        <div class="margin">
+            <span class="big-text">When:</span>
+            <span class="text">Every Saturday and Sunday at 11:00 AM and 3:00 PM</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Duration:</span>
+            <span class="text">120 minutes</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Season:</span>
+            <span class="text">June to July</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Price:</span>
+            <span class="text">£45 per person</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Age:</span>
+            <span class="text">15 years or older</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Meeting Point:</span>
+            <span class="text">Sunny Meadow Farm, Hilltop Lane, Greenfield, NG15 6YX</span>
+        </div>
+        <div class="text">This is your chance to create unforgettable memories while learning a new skill. Don’t forget to wear comfortable clothing and sturdy shoes!</div>
+        <button id="book-shear">Book now</button>
+    </div>
+
+    <div class="menu" id="menu-shear-book">
+        <img src="back.png" class="back" id="back-shear"/>
+        <div class="title">Shear a sheep schedule</div>
+        <div class="big-text">Ready to take on the challenge? Book your spot today!</div>
+        <div class="termin">
+            <span class="text">Saturday, 22nd June – 11:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 23rd June – 3:00 PM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Saturday, 29th June – 11:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 30th June – 3:00 PM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Saturday, 6th July – 11:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 7th July – 3:00 PM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="text margin">Join us for this unique experience and try shearing a sheep yourself!</div>
+    </div>
+
+    <div class="menu" id="menu-felt">
+        <img src="back.png" class="back back_main"/>
+        <div class="title">Fleece to felt</div>
+        <div class="text margin">Fleece to Felt – Create Your Own Wool Masterpiece!</div>
+        <img src="pictures/felt.jpg" class="picture"/>
+        <div class="text">Ever wondered how sheep’s fleece transforms into a cozy felt jacket or a stylish accessory? In our hands-on workshop, you’ll discover the magic of wool while creating your very own felted object. Learn about the journey from fleece to felt and unleash your creativity in a fun, relaxed setting.</div>
+        <div class="big-text">Details:</div>
+        <div class="margin">
+            <span class="big-text">When:</span>
+            <span class="text">Every Saturday and Sunday at 10:00 AM</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Duration:</span>
+            <span class="text">5 hours</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Season:</span>
+            <span class="text">June to July</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Price:</span>
+            <span class="text">Price: £90 per person</span>
+        </div>
+        <div class="margin">
+            <span class="big-text">Meeting Point:</span>
+            <span class="text">Sunny Meadow Farm, Hilltop Lane, Greenfield, NG15 6YX</span>
+        </div>
+        <div class="text">No prior experience is needed – just bring your enthusiasm and a love for learning something new! All materials are provided, and you’ll leave with a unique creation and plenty of woolly knowledge.</div>
+        <button id="book-felt">Book now</button>
+    </div>
+
+    <div class="menu" id="menu-felt-book">
+        <img src="back.png" class="back" id="back-felt"/>
+        <div class="title">Fleece to felt schedule</div>
+        <div class="big-text">Spaces are limited, so book now and join us for an unforgettable wool-filled day!</div>
+        <div class="termin">
+            <span class="text">Saturday, 6th June – 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 7th June – 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Saturday, 13th June – 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 14th June – 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Saturday, 20th June – 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="termin">
+            <span class="text">Sunday, 21st June – 10:00 AM</span>
+            <button class="book">Book</button>
+            <button class="debook">Debook</button>
+        </div>
+        <div class="text margin">Create your own felt masterpiece with us in these creative workshops!</div>
+    </div>
+
+    <div class="message" id="message-booked">
+        <div>You have booked an appointment!</div>
+        <div>We look forward to seeing you.</div>
+    </div>
+    <div class="message" id="message-debooked">Your appointment has been canceled.</div>
+
+</body>
+</html>

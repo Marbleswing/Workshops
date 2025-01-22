@@ -1,0 +1,162 @@
+body{
+    margin-left: 3em;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 4em;
+    margin: 0.5em;
+    margin-left: 0em;
+}
+
+.big-text{
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-right: 0.2em;
+}
+
+.text{
+    font-size: 1.8em;
+    display: inline-block;
+}
+
+.picture{
+    margin: 2em;
+    margin-left: 0em;
+    width: 80%;
+    max-width: 60em;
+    box-shadow: 0 0.5em 1em 0 rgb(0, 255, 21);
+    border: 0.3em solid #33ff00;
+}
+
+.message{
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    left: 30%;
+    padding: 0.3em;
+    background-color: white;
+    font-size: 2em;
+    border: 0.05em solid #33ff00;
+    box-shadow: 0 0.5em 1em 0 rgb(0, 255, 21);
+}
+
+@media (orientation: portrait) {
+    .background{
+        position: fixed;
+        height: 100%;
+        z-index: -1;
+    }
+}
+@media (orientation: landscape) {
+    .background{
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.top-right{
+    top: 0em;
+    right: 0em;
+}
+
+.back{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 5em;
+    height: 5em;
+    transition: width 0.2s ease, height 0.2s ease;
+}
+.back:hover {
+    width: 6em;
+    height: 6em;
+}
+.back:active{
+    width: 4em;
+    height: 4em;
+}
+
+.margin{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.workshop{
+    width: 20em;
+    max-width: 80%;
+    padding: 0.5em;
+    font-size: 2em;
+    box-shadow: 0 4px 8px 0 rgb(0, 255, 21);
+    border-radius: 0.5em;
+    background-color: rgb(255, 255, 255);
+    border: 0.1em solid #33ff00;
+    margin: 1em;
+    margin-left: 0em;
+    transition: transform 0.2s ease;
+}
+.workshop:hover{
+    transform: scale(1.05);
+}
+.workshop:active{
+    transform: scale(0.9);
+}
+.ws-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.ws-info{
+    margin-top: 0.5em;
+    color: rgb(75, 75, 75);
+}
+
+.menu{
+    display: none;
+}
+
+button{
+    margin: 0.2em;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342);
+    border-radius: 0.5em;
+    background-color: rgb(255, 255, 255);
+    border: 0.1em solid #33ff00;
+    transition: transform 0.2s ease;
+}
+button:hover{
+    transform: scale(1.2);
+}
+button:active{
+    transform: scale(0.9);
+}
+
+button.book{
+    display: inline;
+}
+.booked button.book{
+    display: none;
+}
+
+button.debook{
+    display: none;
+}
+
+.disable button{
+    display: none;
+}
+
+.booked button.debook{
+    border: 0.1em solid #ff0000;
+    display: inline;
+}
+.booked{
+    font-size: 1.1em;
+}
+
+.disable{
+    font-size: 0.95em;
+    color: lightgrey;
+}
